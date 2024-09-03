@@ -254,3 +254,13 @@
   });
 
 })()
+
+
+  var dob = new Date("05/22/1992");
+  var month_diff = Date.now() - dob.getTime();
+  var age_dt = new Date(month_diff);
+  var year = age_dt.getUTCFullYear();
+  var birthyear=1992;
+  var age;
+
+  document.getElementById("age").innerHTML = age;
